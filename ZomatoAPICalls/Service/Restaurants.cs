@@ -7,10 +7,8 @@ using ZomatoAPICalls.Models;
 
 namespace ZomatoAPICalls.Service
 {
-    class ZomatoEntry
+    class Restaurants
     {
-        
-
         public static void ShowRestaurants()
         {
             var response = ZomatoInfo.GetRestaurants();
@@ -21,12 +19,12 @@ namespace ZomatoAPICalls.Service
             Console.WriteLine($"Results shown : {response.ResultsShown}");
             Console.WriteLine();
 
-            Console.WriteLine($"{"ID",-10} {"NAME",-40} {"CUISINES",-50} {"LOCATION",-40}");
+            Console.WriteLine($"{"ID",-10} {"NAME",-50} {"CUISINES",-60} {"LOCATION",-40}");
             foreach (var r in restaurants)
             {
                 var restaurant = r.Restaurant;
 
-                Console.WriteLine($"{restaurant.ID,-10} {restaurant.Name,-40} {restaurant.Cuisines,-50} {restaurant.Location.LocalityVerbose,-40}");
+                Console.WriteLine($"{restaurant.ID,-10} {restaurant.Name,-50} {restaurant.Cuisines,-60} {restaurant.Location.LocalityVerbose,-40}");
             }
 
             Console.ReadLine();
