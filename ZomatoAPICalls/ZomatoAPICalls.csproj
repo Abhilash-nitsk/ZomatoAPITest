@@ -48,6 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Review.cs" />
+    <Compile Include="Models\ReviewList.cs" />
+    <Compile Include="Models\ReviewRecord.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\APICall.cs" />
@@ -55,7 +59,8 @@
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="Models\RestaurantList.cs" />
     <Compile Include="Models\RestaurantRecord.cs" />
-    <Compile Include="Service\ZomatoEntry.cs" />
+    <Compile Include="Service\Restaurants.cs" />
+    <Compile Include="Service\Reviews.cs" />
     <Compile Include="Service\ZomatoInfo.cs" />
   </ItemGroup>
   <ItemGroup>
