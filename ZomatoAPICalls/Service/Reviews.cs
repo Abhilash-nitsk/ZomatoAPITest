@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ZomatoAPICall.Models;
 using ZomatoAPICalls.Models;
+using ZomatoAPICalls.Contracts;
 
 namespace ZomatoAPICalls.Service
 {
     class Reviews
     {
+        IZomatoInfo zomatoInfo;
+
+
         public static void ShowReviews()
         {
-            var response = ZomatoInfo.GetReviews();
+            var response = zomatoInfo.GetReviews();
 
             var reviews = response.Reviews;
 

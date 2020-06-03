@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IZomatoInfo.cs" />
     <Compile Include="Models\Review.cs" />
     <Compile Include="Models\ReviewList.cs" />
     <Compile Include="Models\ReviewRecord.cs" />

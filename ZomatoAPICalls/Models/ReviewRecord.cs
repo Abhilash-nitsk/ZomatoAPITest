@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 
-namespace ZomatoAPICall.Models
+namespace ZomatoAPICalls.Models
 {
     public class ReviewRecord
     {
